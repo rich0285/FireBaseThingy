@@ -9,6 +9,8 @@ import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import * as firebase from 'firebase';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import {RouterModule} from '@angular/router';
+
 
 
 
@@ -37,7 +39,8 @@ firebase.analytics();
     AngularFireModule.initializeApp(Config),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFireStorageModule, // storage
+    RouterModule
   ],
   declarations: [ AppComponent, UserProfileComponent ],
   bootstrap: [ AppComponent ]
